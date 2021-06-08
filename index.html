@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halo Friends</title>
+</head>
+
+<h1>:)</h1>
+
+<script>
+    alert('Hai, kamu yang klik tautan di profilku!');
+    var nama = prompt('Tulis nama kamu! :)');
+    if (nama) {
+        alert('Halo '+nama+' :D');
+    } else {
+        alert('Dih sombong bgt sih -_-');
+    }
+    switch(confirm('Kabar kamu baik kan?')) {
+        case true:
+            alert('Oke, semoga harimu menyenangkan! :D'); break;
+        case false:
+            alert('Ada apa?');
+            var mau = confirm('Kamu bisa berbagi cerita kalau kamu mau.') 
+            if (mau) {
+                alert('Yuk ke DM'); window.location = 'https://twitter.com/messages/compose?text=Hello%20Friend!&recipient_id=1323911136765378561'; break;
+            } else {
+                alert('Oke, Aku yakin kamu pasti kuat. Semangat menjalani harimu! :D'); break;
+            }
+    } 
+</script>
+
+</html>
